@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        :hover --> Essa pseudo-classe é usada para selecionar elementos quando o cursor do mouse está sobre eles. Por exemplo, você pode usar a:hover para estilizar links quando o mouse está sobre eles.
+        
+        O exemplo a seguir é sobre stilisação de objetos que pode ser ocultos e ter interação com o mause atravez do :hover. Segui uma simples simulação de uma aba com inteação do mause e ocutamento.
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            text-align: center;
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mause aqui
+        <p id="escondido">TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

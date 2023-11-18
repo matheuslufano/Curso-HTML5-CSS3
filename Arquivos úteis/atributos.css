@@ -1,0 +1,138 @@
+/*Parâmetro/atributos do CSS*/
+style{
+obs.:   '@' sempre mo inicio se uma style.
+        /*seletor*/
+        - seletores (atributos em css):
+        body{/*declarações*/}
+
+
+- cor: style="color" 
+
+- tamanho: style="width: 100px" 
+
+- Tamanho da fonte: font-size: 2em; 
+
+- Nomeando atributo:  
+    - id = "nome do id"  
+    (parâmetro para identificar uma tag expercifica pra um css externo por meio de um '#'+ nome em deternimano arquivo:)
+
+    - classe = "nome do classe"
+    (identificar objetos para uma mesma atribuição, usa o "." ponto)
+
+
+- width="300 px" tamanho img.
+
+- title="titulo flutuante": 
+    No head: nome na aba da janela web.
+    No body: caixa flutuante ao passar o mause por cima so mause.
+
+- Degradê:
+    Se usa o seguinte atributo:
+    "background-image: linear-gradient(posição, cores);"
+        - tipos:
+            - radial-gradient: circulo
+            - linear-gradient: linear 
+        - Direções: 
+            - to right: Para direita 
+            - to left: Para esquerda
+            - to top: para cima
+            - to bottom: para baixo
+            - x deg (x° graus)
+        - cor: 2 cores ou mais.
+            ex: amei esse degrader
+                #01F5BF, #27C2A0, #398F7C
+
+- Fixar objetos (fixed): 
+    se usa o seguinte atributo para fixar um objeto:
+    "background-attachment: fixed;"
+--------------------------------------------------------------------
+/* REPRESENTÇÃO DE CORES COM CSS3*/
+
+- Representação por nomes;
+    style="background-color: blue; color: white;"   
+
+- Representação por códigos Hexadecimais: 
+    <!-- Deceimal: 0 1 2 3 4 5 6 7 8 9-->
+    <!-- Hexadecimais 0 1 2 3 4 5 6 7 8 9 A B C D E F -->
+    style="background-color: #09ff004e; color: #177c07;
+
+- Representação por RGB (red, green, blue):
+    <h2 style="background-color: rgba(225, 255, 0, 0.5); color: rgb(113, 119, 7);"
+
+- Representação por hsl(hue, saturation, lightness) 
+     style="background-color: hsla(0, 100%, 50%, 0.367); 
+     color: hsl(0, 100%, 50%);"
+
+--------------------------------------------------------------------
+/*FONTES NO CSS*/
+font-family: Arial, Helvetica, sans-serif;
+/*
+       FONTES FAMILIARES
+           --> font-family: ;
+---------------------------------------------------------
+-> Fontes provaveis que terá no lado do cliente: 
+- arial
+- courier
+- verdana
+- helvetica
+-> Conjunto de fontes resevas:
+   O css sugere aloguns conjuntos de fontes, p/ caso não tenha a desejada:
+       font-family: Arial, Helvetica, sans-serif;
+       ...
+-> Fontes genericas:
+   serif, monospace, san-serif...
+obs.: site para conferir fontes css
+       - css web safe fonts
+-------------------------------------------------------*/
+
+font-size: 2em;
+/*
+       TAMANHO DA FONTE
+           -->font-size: ;
+---------------------------------------------------------
+Medidas Absolutas
+   cm, mm, im (polegadas), px, pt (ponto), pc (paica)
+   16px é o valor é o valor padrão de um 'em'(tamanho popular)
+
+Medidas Relativas 
+   - em (medida relativa a fonte), 
+   - ex (medida relativa a altura x de uma fonte),
+   - rem (fonte configurada no body)
+   - vw (tamanho de tela)
+   - vh (altura de tela)
+   - % ()
+-------------------------------------------------------*/
+
+font-weight:bold;
+/* 
+  PESO DA FONTE
+   -> font-weight --> Weight(peso)
+   [lighter,notmal,bols,dolder]
+---------------------------------------------------------
+   Fontes como Weight(peso):
+       - Weight (peso),
+       - wicth (largura),
+       - height (altura)
+
+   Valores aceitos pelo paramentro weight(peso):
+       - lighter (+leve)
+       - notmal  (normal)
+       - bols    (negrito)
+       - dolder; (+negrito)   
+       variação numerica, do 100 ao 900:
+               100 o mais leve
+               900 a mais pesada
+-------------------------------------------------------*/
+font-style: italic;
+/*
+ESTILO DA FONTE:
+   - normal (normal)
+   - italic (intalico)
+   - 
+*/
+
+text-decoration: underline;
+/*decoração de texto: sublinhado;
+   - underline ()
+*/
+}

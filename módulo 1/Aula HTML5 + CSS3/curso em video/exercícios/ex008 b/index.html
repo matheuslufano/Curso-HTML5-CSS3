@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+<!--
+    Outras formatações:
+    
+    fonte:
+    -  code 
+
+    ----------------------------------------------------------
+    formatação:
+    - pre (formatação pra manter a endentação do paragrafo)
+    - q (gat pra por aspas(" ") em frases )
+    - blockquote (quebra de linha + deslocamento pra direita)
+    - abbr (serve para dar nomem a abreviações ao passar o mause)
+        <abbr title="nome da abreviação">
+    - bdo (serve pra inverter a frase)
+            <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+                LMTH me sasioc rairc a ...
+            <bdo dir="ltr"> (vai mostrar na orde certa) 
+                Estou aprendendo a criar coisas em HTML.
+-->
+
+
+    <h2>Código-fonte / Pré-formatação ("code", "pre")</h2>
+    <p>O comando <code>"document.getElementByid('teste')"</code> é escrito em linguagem JavaScript.</p>
+    <pre>
+        <code>
+    num = int(input("Digite un número"))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print('O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citaçôes (q)</h2>
+    <p>Como diria o opai de um amigo: <q>O computador é um burro muito rápido</q></p>
+
+    <h2>Citações completas (blockquote )</h2>
+    <p>Segundo Albert Einstein um fisico e matematico memoravel, dizia:  </p>
+    <blockquote cite = "https://vestibulares.estrategia.com/portal/materias/redacao/11-citacoes-de-albert-einstein-para-usar-na-redacao/"> 
+        “Todo mundo é um gênio. Mas, se você julgar um peixe por sua capacidade de subir em uma árvore, ela vai passar toda a sua vida acreditando que ele é estúpido”
+    </blockquote>
+
+    <h2>Abreviações (abbr)</h2>
+    <p>Estou estudando <abbr title="hyperTex Markup language">HTML</abbr> e <abbr title="Cascading style Sheets">CSS</abbr>. Estou adorando!</p>
+
+    <h2>Texto invertido (bdo dir="rtl" e "ltr")</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+</body>
+</html>

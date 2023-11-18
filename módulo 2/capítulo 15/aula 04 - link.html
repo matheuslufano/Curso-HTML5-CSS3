@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            #  = id 
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = clidren (filho)
+        
+            pseudo-class: É usado para definir o estado atual de um elemento. como quando o mause passe sobre o elemento ou quando é ou ja foi clicado.
+
+                A sintaxe das pseudo-classes é a seguinte: 
+                    seletor:pseudo-classe { propriedade: valor; } 1.
+            
+            pseudo-element: Serve apra aplicar estilos em partes espercificas de um elemento, como no començo da linha de um texto ou no fim.
+
+                A sintaxe dos pseudo-elementos é a seguinte: 
+                    seletor::pseudo-elemento { propriedade: valor; } 2.
+        
+        */
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(255, 0, 0);/*<-----(cor texto)*/
+            text-decoration: none;/*<-------(*texto-decoração: nenhum*/
+            font-weight: bold; /*<----------(texto-peso: negrito)*/
+        }
+
+        a:visited {
+        /*^----(pseuda-li...(visitado) interagem com links já visitados) */
+            color: rgb(39, 71, 218);/*<----(cor de texto)*/
+        }
+
+        a:hover{ /*:hover (fluruar)*/
+            color: black;/*<----(cor fonte)*/
+            text-decoration: underline;/*<----( underline -> taxar o texto)*/
+        }
+        a:active{/* ativo, ao clicar em um objeto*/
+            color: rgb(155, 34, 179);
+        }
+
+        
+        a::before{/*:before(:antes)*/
+            content: '➲ ';
+            text-decoration: none 10px ;
+            
+        }
+        
+        a::after{/*:after(:depos)*/ 
+            content: ' [LINK]';/*<-------------------(Conteudo)*/
+            text-decoration: none;/*<----------------(texto-decoração: nenhu)*/
+            font-weight: normal;/*<------------------(texto-peso: normal)*/
+            color: rgba(55, 0, 255, 0.342);/*<-----(cor texto)*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" rel="next" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" rel="next" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" rel="next" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

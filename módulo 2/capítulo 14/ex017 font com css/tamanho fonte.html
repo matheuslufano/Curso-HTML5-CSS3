@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho fontes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+             /*
+                    FONTES FAMILIARES
+                        --> font-family: ;
+            ---------------------------------------------------------
+            -> Fontes provaveis que terá no lado do cliente: 
+            - arial
+            - courier
+            - verdana
+            - helvetica
+            -> Conjunto de fontes resevas:
+                O css sugere aloguns conjuntos de fontes, p/ caso não tenha a desejada:
+                    font-family: Arial, Helvetica, sans-serif;
+                    ...
+            -> Fontes genericas:
+                serif, monospace, san-serif...
+            obs.: site para conferir fontes css
+                    - css web safe fonts
+            -------------------------------------------------------*/
+            
+            font-size: 2em;
+            /*
+                    TAMANHO DA FONTE
+                        -->font-size: ;
+            ---------------------------------------------------------
+            Medidas Absolutas
+                cm, mm, im (polegadas), px, pt (ponto), pc (paica)
+                16px é o valor é o valor padrão de um 'em'(tamanho popular)
+
+            Medidas Relativas 
+                - em (medida relativa a fonte), 
+                - ex (medida relativa a altura x de uma fonte),
+                - rem (fonte configurada no body)
+                - vw (tamanho de tela)
+                - vh (altura de tela)
+                - % ()
+            -------------------------------------------------------*/
+           
+            font-weight:bold;
+            /* 
+               PESO DA FONTE
+                -> font-weight --> Weight(peso)
+                [lighter,notmal,bols,dolder]
+            ---------------------------------------------------------
+                Fontes como Weight(peso):
+                    - Weight (peso),
+                    - wicth (largura),
+                    - height (altura)
+
+                Valores aceitos pelo paramentro weight(peso):
+                    - lighter (+leve)
+                    - notmal  (normal)
+                    - bols    (negrito)
+                    - dolder; (+negrito)   
+                    variação numerica, do 100 ao 900:
+                            100 o mais leve
+                            900 a mais pesada
+            -------------------------------------------------------*/
+            font-style: italic;
+            /*
+            ESTILO DA FONTE:
+                - normal (normal)
+                - italic (intalico)
+                - 
+            */
+
+            text-decoration: underline;
+            /*decoração de texto: sublinhado;
+                - underline ()
+            */
+        }    
+        p{
+            font: italic bold 1em 'work sans', 'sans-serif';
+            /*
+            SHORTHAND FONT
+            -> Propriedade de abreviação de fontes
+            Essa propriedade seque a seguinte ordem:
+
+                font-style -> font-weight -> font-size -> font-family
+            fonte:     stilo>         peso>     tamanho>   familiar
+            */
+        }    
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com forntes</h1>
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus eligendi omnis, tempora maiores iure
+        perspiciatis, consequatur sunt doloremque debitis magnam atque sint commodi nesciunt, aliquid ex magni tempore
+        eaque?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempora nihil laboriosam sint debitis, cum
+        veniam ipsam magni reprehenderit dolores, consequatur dignissimos rem iusto, saepe non! Esse ex nam pariatur?
+    </p>
+</body>
+
+</html>

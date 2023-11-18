@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <!--NOTAS:
+
+        Novas tags:
+            Tags semânticas:
+                As tags semânticas descrevem o tipo de conteúdo que está contido nelas, 
+                tornando mais fácil para os mecanismos de busca, navegadores e leitores 
+                de tela entenderem a estrutura e o propósito do conteúdo. Aqui estão 
+                algumas das principais tags semânticas em HTML5:
+
+            - <header> ( Usada para definir o cabeçalho de uma seção ou área de conteúdo.)
+                A tag <header>(cabeçario) em HTML é usada para definir o cabeçalho
+                de uma seção ou área de conteúdo em um documento HTML.!= de <head>(cabeça)
+                        
+            - <main> (Usada para marcar o conteúdo principal de uma página.)
+                A tag <main> em HTML5 é usada para marcar o conteúdo principal de uma página 
+                da web. Ela é uma das tags semânticas introduzidas para ajudar a estruturar 
+                o conteúdo de forma mais significativa e acessível. O elemento <main> é 
+                destinado a conter o conteúdo principal da página, excluindo cabeçalhos, 
+                rodapés, barras laterais ou outros elementos secundários.
+
+            - <footer> (Usada para definir o rodapé de uma seção ou da página como um todo.)
+                A tag <footer> em HTML é usada para definir o rodapé de uma seção, de um 
+                elemento <article> ou da página como um todo. Ela é uma das tags semânticas
+                introduzidas no HTML5, e sua principal função é fornecer informações 
+                relacionadas ao final de uma seção ou documento. O conteúdo dentro da 
+                tag <footer> é geralmente usado para incluir informações como direitos autorais, 
+                informações de contato, links para páginas relacionadas, datas de publicação, 
+                créditos ou qualquer outro conteúdo que seja relevante para o rodapé da 
+                seção ou da página.
+
+           - <nav>: Usada para marcar elementos de navegação, como menus.
+           - <article>: Usada para marcar um conteúdo independente e autônomo, como uma postagem de blog ou um artigo.
+           - <section>: Usada para agrupar conteúdo relacionado dentro de uma página.
+           - <aside>: Usada para marcar conteúdo que é tangencial ou relacionado ao conteúdo principal, como barras laterais.
+           - <figure> e <figcaption>: Usadas para marcar imagens, gráficos e outras mídias, juntamente com legendas descritivas.
+           - <details> e <summary>: Usadas para criar um elemento de divulgação para conteúdo ocultável.
+
+
+        Atributo de stylização:
+            Sombra na caixa
+            box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.39);
+            com esse atributo é possivel definir a direção da sombra e a sua cor.
+
+            border-radius: 20px;
+            Atributo para criar bordas, seguindo a mesma logica dos lados, 
+            1 valor vale para os 4 lados
+            2 valores vale para largura e altura
+            4 valores vale individualmente (sentido horario).
+
+
+
+
+    :-->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(246, 214, 214);
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1{text-align: center;
+            box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.281);
+        }
+
+        nav{
+            background-color: gray;
+            padding: 3px;
+            box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.39);
+        }
+        
+        nav > a{
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            margin: auto 50px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px; 
+            border-radius: 20px 6px;
+            box-shadow: 3px 3px 6px 0px black;
+        }
+
+        article{
+            background-color: aliceblue;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(218, 239, 243);
+        }
+        footer{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--Header(Cabeçario)
+    Grupo de tags semanticas-->
+    <header>    
+        <h1>Meu site</h1>
+        
+        <!--nav(navegação)-->
+        <nav> 
+            <a href="#">Menu</a>
+            <a href="#">Categorias</a>
+            <a href="#">Redes</a>
+            <a href="#">Ajuda</a>
+            <a href="#">Logim</a>
+        </nav>
+    </header>
+    <main>
+        <!--section(assunto)-->
+        <section id="assuntos">
+            <p>Esporte Polótica Tecnologia</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Tags semânticas:</h2>
+                <p>
+                As tags semânticas descrevem o tipo de conteúdo que está contido nelas, 
+                tornando mais fácil para os mecanismos de busca, navegadores e leitores 
+                de tela entenderem a estrutura e o propósito do conteúdo. Aqui estão 
+                algumas das principais tags semânticas em HTML5: <br>
+                - header, <br> 
+                - main, <br>
+                - footer...
+                </p>
+                <aside>
+                    <p>Artigo escrtipo por Matheus Santos Mota</p>
+                </aside>
+            </article>            
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2023 Matheus Lufano desenvolvedor do web </p>
+    </footer>
+    
+</body>
+</html>

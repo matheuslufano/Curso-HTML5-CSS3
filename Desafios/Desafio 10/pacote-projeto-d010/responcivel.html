@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*REPONSIVIDADE*/
+            min-width: 250px;/*largura minima*/
+            max-width: 800px;/*largura maxima*/
+            margin: auto;
+        }
+
+        img{
+            width: 100%;/*largura*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testendo Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis quod, nulla enim aperiam atque accusamus eaque autem totam. Minus temporibus aliquam consequatur velit beatae magni quos quaerat magnam nihil! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatibus illo totam assumenda laudantium provident consectetur molestias ex, sapiente quod repudiandae suscipit cupiditate, minima corporis mollitia necessitatibus voluptates rerum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ab adipisci doloribus exercitationem nostrum explicabo quia aut. Placeat porro autem nisi dolor cupiditate adipisci harum deserunt fuga magni, consectetur hic?</p>
+        <picture>
+            <!--REPONSIVIDADE usando a tag source com parametro meida="(max-width: x px)"-->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok-g.jpg" alt="irina-blok">
+
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis quod, nulla enim aperiam atque accusamus eaque autem totam. Minus temporibus aliquam consequatur velit beatae magni quos quaerat magnam nihil! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatibus illo totam assumenda laudantium provident consectetur molestias ex, sapiente quod repudiandae suscipit cupiditate, minima corporis mollitia necessitatibus voluptates rerum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ab adipisci doloribus exercitationem nostrum explicabo quia aut. Placeat porro autem nisi dolor cupiditate adipisci harum deserunt fuga magni, consectetur hic?</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+<!--tags basicas: -->
+<h1>Titulo</h1>
+<h2>Sub titulo de "h1"</h2>
+<h3>Sub titulo de "h2"</h3>
+<h4>Sub titulo de "h3"</h4>
+<h5>Sub titulo de "h4"</h5>
+<h6>Sub titulo de "h5"</h6>
+
+<hr> <!--linha-->
+
+<p>Paragrafo</p>
+<p style="color: blue; font-size: 16px;">Este é um parágrafo azul com tamanho de fonte 16px.</p>
+
+<br><!--Pula linha em paragrafo-->
+
+<a href=""></a> <!--gat: "a" ancura (link)-->
+
+<img src="" alt=""> <!--gat: imagem-->
+
+<button>Clique em mim</button> <!--gat: botão, cria um botão-->
+
+<!--Lista desordenada: -->
+<ul>Lista sem rodem:
+    <li>caneta azul</li> <!--tag: "li" objeto da lista.-->
+    <li>martelo</li> 
+    <li>mapa</li>
+    <li>jardim</li>
+</ul>
+<!--Lista ordenada: -->
+<ol>
+    <li>um</li>
+    <li>dois</li>
+    <li>três</li>
+</ol>
+
+
+--------------------------------------------------------------------
+<!-- Parâmetro/atributos do CSS -->
+- cor: style="color" 
+
+- tamanho: style="width: 100px" 
+- Tamanho da fonte: font-size: 2em; 
+
+- Nomeando atributo:  
+- id = "nome do id"  
+(parâmetro para identificar uma tag expercifica pra um css externo por meio de um '#'+ nome em deternimano arquivo:)
+arquivo html:
+id="titulo"
+---------------
+css externo: 
+#titulo {parâmetro}
+
+- classe = "nome do classe"
+(identificar objetos para uma mesma atribuição, usa o "." ponto)
+
+
+
+- width="300 px" tamanho img
+
+- title="titulo flutuante" abre uma caixa flutuante ao passar o mause por cima so mause.
+
+- Degradê: 
+    background-image: linear-gradient(posição, cores);
+        
+    - tipos:
+        - radial-gradient: circulo
+        - linear-gradient: linear 
+    - Direções: 
+        - to right: Para direita 
+        - to left: Para esquerda
+        - to top: para cima
+        - to bottom: para baixo
+        - x deg (x° graus)
+    - cor: 2 cores ou mais.
+        ex: amei esse degrader
+            #01F5BF, #27C2A0, #398F7C
+    
+- Fixar objetos (fixed): 
+    background-attachment: fixed;
+
+
+--------------------------------------------------------------------
+Representando Cores com CSS3
+- Representação por nomes;
+    style="background-color: blue; color: white;"   
+
+- Representação por códigos Hexadecimais: 
+    <!-- Deceimal: 0 1 2 3 4 5 6 7 8 9-->
+    <!-- Hexadecimais 0 1 2 3 4 5 6 7 8 9 A B C D E F -->
+    style="background-color: #09ff004e; color: #177c07;
+
+- Representação por RGB (red, green, blue):
+    <h2 style="background-color: rgba(225, 255, 0, 0.5); color: rgb(113, 119, 7);"
+
+- Representação por hsl(hue, saturation, lightness) 
+     style="background-color: hsla(0, 100%, 50%, 0.367); 
+     color: hsl(0, 100%, 50%);"

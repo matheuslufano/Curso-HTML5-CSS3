@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    <h1>Trabalho com Listas</h1>
+    <!--
+        - Tag <ol> (Cria listas enumeradas)
+            type="<5 opções>" (p/ formatar a lista se pode usar a função type que oferece 5 formatações)
+            start="x" (O valor "x" formatação irar indicar o começo da lista)
+
+        - Tag <ul> (Cria listas não numerica)
+                <ul type:>
+                        disc    (●)
+                        circle  (○)
+                        square  (■)
+
+        - A tag <li> é opcional, não é precisa feixar a marcação com </li>;
+    -->
+
+<!--Listas Ordenadas --> 
+    <h2>Listas Ordenadas (ol: li)</h2>
+      <ol type="1" start="1">
+        <li>Acordar</li>        <!--A tag <li> é opcional-->  
+        <li>Ligar para João</li>
+        <li>Tomar banho</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+<!--
+    Tag <ol> (Cria listas enumeradas)
+        type="<5 opções>" (p/ formatar a lista se pode usar a função type que oferece 5 formatações)
+        start="x" (O valor "x" formatação irar indicar o começo da lista)
+-->
+
+<!--Liatas não Ordenadas -->   
+    <h2 ty>Liatas não Ordenadas (ul: li)</h2>
+    <ul type="square"><!-- disc(●), circle(○), square (■)-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>    
+    <!--  Tag <ul> (Cria listas não numerica)
+        <ul type:>
+                disc    (●)
+                circle  (○)
+                square  (■) -->   
+
+
+
+
+
+
+<!--Juntando listas: -->                
+    <h2>Juntando listas: </h2>
+    <p>Consistem em duas ou mais listas separadas dentro de uma tag "ol"</p>
+<!--
+    Consistem em duas ou mais listas separadas dentro de uma tag <ol>
+-->
+    <h4>Minhas linguagens favoritas </h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <h4>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="disc">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Leveis</li>
+            </ul>
+            <li>Ninja Gai</li>
+        </ul>
+
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+<!--Lista de definição  --> 
+    <h4>Lista de definição ( < dl >: < dt >/< dd > ) </h2>
+    <!--        
+     A tag "dt": titulo (de uma descrição)
+     A tag "dd": é a descrição do titulo
+        como isso o titulo e a descrição ficam endentadas.
+    -->
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>linguagem de marcação para a criação de um site.</dd>
+
+        <dt>CSS</dt>
+        <dd>linguagem de marcação para a criaçãode do design de um site. </dd>
+        
+        <dt>JavaScript</dt>
+        <dd>linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>
+

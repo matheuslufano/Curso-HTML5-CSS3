@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h4>1° pág.</h4>
+    <h1>Trabalhando com links</h1>
+
+    <h2>Usando links externos: (tag: 'a') </h2>
+    <!-- A tag <a> vem de ancura, seu parametro "href" (referencia de hipetexto)  -->
+     <p>A tag < a > vem de "ancora", seu parametro "href" (referencia de hipetexto) onde será colocado o link desejado. </p>   
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <!--a formatação ao fim do link: 
+        - target="_blank" e rel="external" dentro da tag <a>.
+            - rel="external" é um link externo, que vai pra fora do site.
+            - target="_blank" irar abrir um site em branco/nova aba.
+            - target="_self" na propria aba
+        -->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuido no YouTube</a></p>
+
+    <h2>Usando link internos</h2>
+    <h3>(tag semantica, rel="next" seguir)</h3>
+    <!--Ps:dentro de aspas dupla-> Segunrando (ctrl + espaço) abre os endereço de arquivos dentro da mesma pasta de. por ex. href:
+        
+            href="pag002.html"
+    -->
+    <p>Essa é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+
+    <h2>Links para download</h2>
+    <h3>(parâmetro: download=" " e type="" )</h3>
+    <!--
+        Os link de dowload vair usar a mesma tag '< a >' para de criar um link, dentro da tag basta digitar o parâmetro download:
+            parametro: download="meulivro.pdf" na tag '< a >'
+            para isso o arquivo em pdf ou zip "meulivro.pdf" precisa estar dentro da pasta/servidor
+    -->
+    <p>Os link de dowload vair usar a mesma tag '< a >' para de criar um link, dentro da tag basta digitar o parâmetro download:</p>
+
+    <p>
+        parâmetro: <strong>download="meulivro.pdf"</strong><br>
+        Esse parâmetro indica onde estar o arquivo, para isso o arquivo em pdf ou zip precisa estar dentro da pasta/servidor<br>
+    </p>
+    <p>
+        parâmetro: <strong>type=" "</strong><br>
+        indica qual o formato do arquivo a ser baixado <br>obs.: cada arquivo tem um type diferente, como:
+        <dd>
+            type="application/zip" <br>
+            type="application/pdf"
+        </dd>
+    </p>
+    
+
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

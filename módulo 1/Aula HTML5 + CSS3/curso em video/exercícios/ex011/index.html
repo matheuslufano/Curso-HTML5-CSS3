@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Midias sociais</h1>
+    <h2>Imagens dinámicas</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplemente aumente o tamanho do seu navergador.
+    </p>
+    <!--Tag: <picture>  Serve para mostrar diferentes imagens.
+
+        A tag "picture" é uma tag HTML usada para definir uma imagem em uma página da web de maneira responsiva. Ela permite que você especifique várias fontes de imagem usando a tag "source", cada uma adaptada para diferentes tamanhos de tela e resoluções. A tag "img" é usada como fallback para navegadores que não suportam a tag "picture" ou "source". Isso ajuda a garantir que a imagem seja exibida de maneira adequada em dispositivos de diversos tamanhos e resoluções, melhorando a experiência do usuário.
+    -->
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagem flexível">
+    </picture>
+
+    <h2>Reprodusindo Áudio</h2>
+    <p>Vamos aprender a Reproduzir áudios em HTML5.</p>
+    
+    <!-- uma pra por aúdio.
+    <audio src="midia/Here-it-Comes-TrackTribe.mp3" controls autoplay></audio>
+    -->autoplay
+    <audio preload="metadata"  controls >
+        <source src="midia/Here-it-Comes-TrackTribe.mp3" type="audio/mp3">
+        <source src="midia/Here-it-Comes-TrackTribe.mp3" type="audio/ogg">
+
+        <source src="midia/Here-it-Comes-TrackTribe.mp3" type="audio/wav">
+        <p>Infelismente seu navergador não consegue Reproduzir aúdio. <a href="midia/Here-it-Comes-TrackTribe.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+
+    <h2><br>Reprodusindo Vídeo</h2>
+    <p>Inserido vídeos hospedados localmente no meu proprio servidor.</p>
+    <!--opção 1:
+    <video src="midia/vídeos/viado.webm.webm" width="500" controls></video>
+    -->
+    <video width="500" poster="midia/imagens/viado-capa.jpeg" controls>
+        <!--udar a tag:source:src-->
+        <source src="midia/vídeos/viado.mp4"  type="video/mp4">
+        <source src="midia/vídeos/viado.webm" type="video/webm">
+        <p>Seu navergador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <p>É possivel por um vídeo forra do meu servidor sem consumir da minha hospedagem. <br>
+    por exemplor é possivel fazer um link direatamente com o you tube: Sakura Card Captors</p>
+    <h2 style="color: palevioletred;">Sakura Card Captors é meu anime favorito</h2>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/P7xuOiOfLq0?si=mIjyjUmAOp_dtkLl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

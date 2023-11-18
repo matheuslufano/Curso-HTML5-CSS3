@@ -1,0 +1,113 @@
+Claro, aqui está uma lista abrangente do que você precisa estudar para se tornar proficiente em HTML5 e CSS3:
+
+**HTML5:**
+
+1. Estrutura Básica:
+   - Elementos HTML
+   - Tags
+   - Atributos
+
+2. Documento HTML:
+   - Doctype
+   - Elementos `<html>`, `<head>`, `<body>`
+   - Codificação de caracteres
+
+3. Elementos Estruturais:
+   - `<header>`, `<nav>`, `<footer>`
+   - `<section>`, `<article>`, `<aside>`
+   - `<main>`
+
+4. Links e Âncoras:
+   - `<a>` (hiperlinks)
+   - Atributos `href`, `target`
+
+5. Listas:
+   - `<ul>`, `<ol>`, `<li>`
+   - `<dl>`, `<dt>`, `<dd>`
+
+6. Tabelas:
+   - `<table>`, `<tr>`, `<th>`, `<td>`
+
+7. Formulários:
+   - `<form>`, `<input>`, `<textarea>`
+   - Elementos de formulário (radio, checkbox, select, etc.)
+   - Validação de formulário
+
+8. Mídia:
+   - `<img>`, `<video>`, `<audio>`
+
+9. HTML Semântico:
+   - Uso apropriado de elementos HTML para conteúdo
+
+10. HTML5 APIs:
+    - Local Storage
+    - Geolocalização
+    - Canvas
+
+11. Estrutura de Página:
+    - `<meta>` para SEO
+    - `<link>` para folhas de estilo externas
+    - `<script>` para carregar JavaScript
+
+**CSS3:**
+
+1. Seletores:
+   - Seletores de elemento
+   - Classes e IDs
+   - Seletores combinados
+
+2. Propriedades de Estilo:
+   - Cores (background-color, color)
+   - Fontes (font-family, font-size)
+   - Margens e Preenchimento (margin, padding)
+   - Borda (border)
+   - Dimensões (width, height)
+
+3. Modelo de Caixa:
+   - Box-sizing
+   - Margin collapse
+
+4. Posicionamento:
+   - Posicionamento estático, relativo, absoluto, fixo
+   - Z-index
+
+5. Layouts:
+   - Display (block, inline, inline-block)
+   - Float
+   - Flexbox
+   - Grid
+
+6. CSS Transitions e Animações:
+   - Transições (transition)
+   - Animações (animation)
+
+7. Pseudo-classes e Pseudo-elementos:
+   - :hover, :active, :focus
+   - ::before, ::after
+
+8. Responsividade:
+   - Media queries
+   - Unidades de medida flexíveis (%, em, rem)
+
+9. Estilização de Links:
+   - :link, :visited, :hover, :active
+
+10. Estilos de Texto:
+    - Text-transform, text-align, text-decoration
+
+11. Gradientes e Sombras:
+    - Gradient backgrounds
+    - Box shadows e text shadows
+
+12. Transformações:
+    - Rotate, scale, translate
+
+13. CSS Variáveis (Custom Properties)
+
+14. Layout Multi-colunas
+
+15. Especificidade e Cascata
+
+16. Pré-processadores CSS (opcional): SASS, LESS, etc.
+
+Lembre-se de que esta é uma lista abrangente e você pode estudar esses tópicos em qualquer ordem que preferir. À medida que você se torna mais confortável com os conceitos básicos, pode mergulhar em tópicos mais avançados, como animações, layout responsivo e outras técnicas avançadas de CSS3. A prática constante é fundamental para se tornar um desenvolvedor web habilidoso.

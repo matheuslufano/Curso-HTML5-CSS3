@@ -1,0 +1,77 @@
+<!--
+No HTML, você pode aplicar estilos CSS de três maneiras diferentes: 
+
+
+    1. **CSS Inline:** Neste método, você aplica estilos diretamente a um elemento HTML usando o atributo `style`. Por exemplo:
+
+-->
+<p style="color: blue; font-size: 16px;">CSS Inline: Este é um parágrafo azul com tamanho de fonte 16px.</p>
+<!--
+    O CSS é definido no próprio elemento, o que torna a manutenção mais difícil em páginas grandes.-->
+
+
+<!--
+2. **CSS Interno (Internal CSS):** Neste método, você define o CSS dentro da seção `<head>` do documento HTML, entre as tags `<style>`. Isso se aplica a todos os elementos da página. Por exemplo:
+
+    Na cabeça do arquivo html 
+    <head>  
+         <style>    <---- usase a tag
+            
+            detro dela é adicionado os parâmetros para tags que se deseja motificar, dessa forma se pode trabalhar com toadas as tag de uma só vez. Como:
+            - h1
+            - p
+            - a
+            etc...
+
+        </style>
+    </head>    
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {background-color: rgb(15, 7, 7);}
+    p {
+      color: rgb(0, 255, 30);
+      font-size: 16px;
+    }
+    h1 {
+        color: brown;
+        font-size: 30px;
+    }
+    
+  </style>
+</head>
+<body>
+  <p>CSS Interno (Internal CSS): Este é um parágrafo azul com tamanho de fonte 16px.</p>
+</body>
+</html>
+<!--O CSS é definido no documento, mas separado do conteúdo, o que facilita a manutenção em páginas maiores.-->
+
+
+
+<!--
+3. **CSS Externo (External CSS):** Neste método, você cria um arquivo CSS separado com todas as regras de estilo e o vincula ao documento HTML usando a tag `<link>`. Isso permite que você mantenha todo o estilo em um único arquivo que pode ser reutilizado em várias páginas. Por exemplo:
+-->
+<!-- No arquivo HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <p>CSS Externo (External CSS): Este é um parágrafo com base nas regras do arquivo CSS externo.</p>
+</body>
+</html>
+
+<!-- css
+/* No arquivo CSS externo (styles.css) */
+p {
+  color: blue;
+  font-size: 16px;
+}
+
+O CSS externo é a prática recomendada para projetos maiores e para manter o código organizado e reutilizável.
+
+Em resumo, você pode usar estilos CSS inline, internos ou externos no HTML, dependendo das necessidades do seu projeto. O CSS externo é geralmente a abordagem mais flexível e escalável.
+-->

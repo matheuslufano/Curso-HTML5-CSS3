@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 – Modelo de Caixas na prática</title>
+    <style>
+            /*OBS:
+            SHORTHAND FONT
+            -> Propriedade de abreviação de fontes
+            Essa propriedade seque a seguinte ordem:
+
+                font-style -> font-weight -> font-size -> font-family
+            fonte:     stilo>         peso>     tamanho>   familiar
+
+                obs:
+                - conteudo: o objeto em sim
+                - padding: Espaço entre o conteudo a borda.
+                - border: bordas.
+                - margin: espaço para fora das bordas.
+            
+            ShortHand:
+            Pra stylizar
+                - border: 7px groove #4CAF50;
+                - outline: 5px dashed rgb(12, 71, 4);
+
+            Pra dimenções
+                - padding: 10px; (1 valor atribui para os 4 lados)
+                - padding: 10px 20px; (atribui p/ cima e baixo)
+                - padding: top right bottom left; (atribui os 4 lados valores)
+                obs.: qualquer um dos 4 valores pode ser substituido por "auto"
+                pra automatizar as dimenções do elemento.
+
+            extra:
+                - margin: auto; (esse atributo faz ficar no centro)
+                - display: block; autera o tipo da caixa
+                    - display:  block; (quebra linha)
+                    - display: inline; (mante na linha)
+        -------------------------------------------------------------
+
+        Segue alguns exemplos de "Box-level" e "Inline-level"   */
+        h1{ /*Box-level:
+            
+            - box shadow*/ 
+            
+            background-color: #F44336;
+            height: 300px;
+            width: 300px;
+
+            /*border: bordas do h1*/
+            border-width: 7px;
+            border-style: groove;
+            border-color: #4CAF50;/*
+            - short hand: (border)
+            border: 7px groove #4CAF50;
+            ----------------------------*/
+
+            /*Borda para dentro*/
+            padding-top: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;/*
+            - short hand:(padding) seguinte onde
+            -> padding: top right bottom left;
+
+            ou no caso de ser tudo igual: 
+            - padding: 10px (colocar apenas um valor p/ 4 laogos)   
+            ---------------------------------------*/
+
+            /*Da Borda para fora*/
+            margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-left: auto;/*
+            ShotHand
+            - margin: top right bottom left;
+            - margin: auto;(comando faz ficar no centro)
+            
+            ---------------------------------------*/
+
+            /*tracegado*/
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: rgb(12, 71, 4);/*
+            ShotHand
+            - outline: 5px dashed rgb(12, 71, 4);
+            */
+         }   
+        a{ /* Inline-level
+            
+            ShotHand:                            */
+            
+            background-color: rgb(218, 255, 218);
+            border: 5px groove red;
+            padding: 10px;
+            margin: 1px;
+            
+            /* auterando o tipo caixa com diplay
+            display: block;
+            height: 300px;
+            width: 300px;
+            */
+        }
+        p {
+            background-color: rgb(241, 202, 241) ; 
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de caixa de box-levelbr <br>
+        Box-live (display block)
+    </h1>
+    <p>Parágrafos também são exemplos de box-level,<br> mas os <a href="#"><!--# link valido-->links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>
+<!--
+user agent: Configurações de css predefinidas pelo navergador.
+{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+
+-->

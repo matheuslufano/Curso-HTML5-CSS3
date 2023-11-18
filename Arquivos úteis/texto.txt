@@ -1,0 +1,25 @@
+1) Considerando às regras de formação de fórmulas bem formadas, identifique dentre as fórmulas apresentadas a seguir quais são fórmulas da lógica proposicional. Considere ainda a forma simplificada de representação de fórmulas em que os símbolos de pontuação podem ser eliminados.
+a) (P ^ Q) -> (~R ^ ~Q) 
+b) (P ^ Q) (~R ^ ~Q) 
+c) (^Q) -> (~R ^ ~Q) 
+d) ((P ^ Q) -> ((~R ^ (~Q)))
+
+2 - Simplifique ao máximo, se possível, o número de símbolos de pontuação das fórmulas a seguir.
+ a) (P -> Q) ^ P
+ b) ((P v (¬Q) -> T ) <-> (~R  (¬Q)))
+ c) ((P  Q) -> ((~R) v (~Q))) 
+
+Vamos simplificar cada uma das fórmulas, reduzindo o número de símbolos de pontuação:
+
+a) \( (P \rightarrow Q) \land P \)
+   - Não é possível simplificar mais sem perder a clareza. Esta é uma fórmula bem formada da lógica proposicional.
+
+b) \( ((P \lor (\lnot Q) \rightarrow T) \leftrightarrow (\lnot R \lor (\lnot Q))) \)
+   - Podemos simplificar removendo os parênteses desnecessários:
+     \[ (P \lor \lnot Q \rightarrow T \leftrightarrow \lnot R \lor \lnot Q) \]
+
+c) \( ((P \land Q) \rightarrow (\lnot R \lor \lnot Q)) \)
+   - Podemos simplificar removendo os parênteses desnecessários:
+     \[ (P \land Q \rightarrow \lnot R \lor \lnot Q) \]
+
+Estas são as formas simplificadas das fórmulas, reduzindo os símbolos de pontuação ao máximo sem perder a clareza na expressão lógica.

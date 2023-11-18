@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes em CSS</title>
+    <style>
+        /*
+            Pseudo-classes
+        
+        As pseudo-classes são precedidas por dois pontos (:) e são usadas para aplicar estilos a elementos HTML com base em interações do usuário, estados do elemento ou outras condições.
+        
+        Para selecionar uma classe se usa (.)
+        para selecinar uma pseudo classe se usa (:)
+
+        Elas são relacionadas ao estado de um determinado elemento, como caso estiver:
+            - ativo
+            - desativado
+            - interação com mause
+            - 
+
+        hover: atributo para quando se passar o mause pelo objeto.
+        
+        div: Abreviação de divisão, tag seve para criar elementos com height(altura) e width(largura). sendo usada para agrupar e dividir o conteúdo em seções distintas em uma página da web. A principal finalidade da tag <div> é organizar e estruturar o layout de uma página da web.
+        
+        O exemplo de div a seguir contem 3 quadrados com dimenções 200px e 
+            */
+        div{
+            display: inline-block;/*<---------------(Alinhar na mesma linha)*/
+            background-color: blanchedalmond;/*<--(Cor de fundo)*/
+            border: 1px solid black;  /*<---------(bordas: presta)*/
+            text-align: center;/*<------------------(alinha-texto: centralizado)*/
+            height: 200px;/*<-----------------------(Altura)*/
+            width: 200px; /*<-----------------------(Largura)*/
+        }
+
+        div:hover{/*:hover (pseuda classe) para quando o mause passar por cima*/
+            background-color: rgb(236, 225, 71);
+        }
+        
+    </style>
+</head>
+<body>
+    <div div="d1">01</div>
+    <div div="d2">02</div>
+    <div div="d3">03</div>
+
+</body>
+</html>

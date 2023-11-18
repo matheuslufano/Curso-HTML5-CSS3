@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*
+    Em HTML é id --> mo CSS é #, só se deve usar para um objeto.
+    Em HTML é class --> mo CSS é .(ponto) serve para varios elementos.
+
+
+*/
+BODY{
+    background-color: rgb(233, 245, 232);font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: green;
+}
+#html{
+    background-color: coral; color: white
+}
+#css{
+    background-color: dodgerblue; color: white;
+}
+h2{
+    color: rgb(113, 145, 65);
+}
+h1#principal{
+    text-align: center;
+    background-color: green; color: white;
+}
+.basico{
+    color: #83bd77;
+     font-weight: bold;
+}
+.intermediário{
+    color: #e2d34a;
+}
+.avançado{
+    color: #F59F98;
+}

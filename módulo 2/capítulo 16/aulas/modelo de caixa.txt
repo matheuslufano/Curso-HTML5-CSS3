@@ -1,0 +1,54 @@
+        MODELO DE CAISAS
+Todo obejeto em html tem dimenções e areas, das quais é possivel fazer alterações.
+
+
+Aninhamento: ação de por um ninho dentro de outro.
+
+todo elemento tem medidas: Uma caixa (bordas)
+Altura: height
+Largura: width
+
+ESPAÇO INTERNO:
+    Border: "bordas" (linha que circuda o elemento), dentro do elemento.
+    Padding: "epaço" do comteudo a bordas
+
+ESPAÇO EXTERNO:
+   Margin: "Margem" espaço da Border(bordas) até as margin(margem).
+   Outline: "Contorno/trassado" fora do elemento.
+
+
+   Há dois tipos de caixas:
+   - Box-level: "nivel de caixa" Os obejetos sempre usar a dimenções inteiras da tela, e os blocos sempre pulão para a procima linha.
+        tag mais usada nessa caixa: <div>
+            - quebra linha.
+            - se redimenciona de acordp com o tamanho do monitor.
+
+        outras tags:
+            - <div>;
+            - <h1>;
+            - <p>;
+            - <main>;
+            - <header>;
+            - <nav>;
+            - <article>;
+            - <astide>;
+            - <footer>;
+            - <form>;
+            - <video>;
+   
+   - Inline-level: "biverk completo" Os objetos mantem suas dimenções e os seus blocos sempre segue um depois do outro, na mesmoa linha.
+        tag mais usada nessa caixa: <span>
+            - Um elemento do lado do outro.
+
+        Outras tags:
+            - <span>;
+            - <a>;
+            - <code>;
+            - <small>;
+            - <strong>;
+            - <em>;
+            - <sup>;
+            - <label>;
+            - <button>;
+            - <input>;
+            - <select>;

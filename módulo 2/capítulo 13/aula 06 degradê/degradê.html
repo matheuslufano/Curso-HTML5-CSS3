@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS3</title>
+
+    <!--
+    Para se trabalha com degrader na stylização do css, se usarar os parametro:
+    "linear-gradient  "Degrater linear"
+
+        <style>
+    >>> background - image: linear-gradient (direção, todas as cores) os parâmetro 
+        
+    parametros do atributo "background-image: linear-gradient" 
+
+            - tipos:
+                - radial-gradient: circulo
+                - linear-gradient: linear 
+            - Direções: 
+                - to right: Para direita 
+                - to left: Para esquerda
+                - to top: para cima
+                - to bottom: para baixo
+                - x deg (x° graus)
+                - 
+            - cor: 2 cores ou mais.
+                ex: amei esse degrader
+                    #01F5BF, #27C2A0, #398F7C
+
+
+
+    </style>
+            -->
+    <style>
+        *{ /*Configuração globais das CSS*/
+            height: 100%;
+        }
+
+        body{/*atributo de degrader*/
+            background-image: linear-gradient(110deg, #505BC9, #8142BF, #C33B93, #F7504F, #FF8C47);
+            /*parâmetro p fixar o degrader*/
+            background-attachment: fixed;
+            }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>
