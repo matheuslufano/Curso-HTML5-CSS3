@@ -135,4 +135,29 @@ text-decoration: underline;
 /*decoração de texto: sublinhado;
    - underline ()
 */
-}
+-------------------------------------------------------------------------------------
+imagem de fundo no seu site:
+    style: 
+        Para por uma image no fundo da pagina se usa a seguinte atribuição.
+        background-image: url('imagens-cap19/pattern002.png');
+
+    outros tipos:
+      (Cor solida) background-color: skyblue;
+      (Degradê) background-image: linear-gradient(to bottom, yellow, orange);
+      (image no fundo) background-image: url('imagens-cap19/pattern002.png');
+----------------------------------------------------------------------------------------
+Capítulo 19 Aula 03 – Imagens que se repetem no fundo do site
+
+Atributos usados:
+    Imagem de fundo (local ou url):
+        -> background-image: url("");
+
+    Tamanho da imagem:
+        -> background-size: 250px 250px;
+    
+    Repetição da imagem:
+        -> background-repeat: repeat;
+        -> nesse atributo pode se usar: 
+            no-repeat (não repete),
+            repeat-x (repete linha x), 
+            repeat-y (repete coluna y)
