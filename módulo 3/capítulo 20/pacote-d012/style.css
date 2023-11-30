@@ -1,8 +1,6 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-image: url('imagens/background001.jpg');
-    
 }
 header{
     background-color: black;
@@ -24,12 +22,55 @@ header h4{
     text-align: center;
 }
 
-aside{
-    background-color: antiquewhite;
+article#img1{
+    margin: 0%;
+    padding: 0%;
+    background-image: url('imagens/background001.jpg');
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+    background-repeat: no-repeat;
 }
 
-aside p{
-    padding: 20px;
+article#img1 p.fundo{
+    background-color: antiquewhite;
+    padding: 30px;
     margin: 0%;
+    font-size: 40px;
+}
+article#img1 p.sem-fundo{
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.233);
+    padding: 20px;
+    margin: 2%;
+    font-size: 40px;
+}
+
+article#img2{
+    margin: 0%;
+    padding: 0%;
+    background-image: url('imagens/background002.jpg');
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 10px;
+    background-repeat: no-repeat;
+}
+
+article#img2 p.fundo{
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0%;
+    font-size: 40px;
+}
+article#img2 p.sem-fundo{
+    width: 500px;
+    background-color: rgba(255, 10, 10, 0.233);
+    padding: 20px;
+    margin: 2%;
     font-size: 40px;
 }
