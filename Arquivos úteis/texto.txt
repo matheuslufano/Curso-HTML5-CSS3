@@ -1,25 +1,23 @@
-1) Considerando às regras de formação de fórmulas bem formadas, identifique dentre as fórmulas apresentadas a seguir quais são fórmulas da lógica proposicional. Considere ainda a forma simplificada de representação de fórmulas em que os símbolos de pontuação podem ser eliminados.
-a) (P ^ Q) -> (~R ^ ~Q) 
-b) (P ^ Q) (~R ^ ~Q) 
-c) (^Q) -> (~R ^ ~Q) 
-d) ((P ^ Q) -> ((~R ^ (~Q)))
+Para determinar o determinante de uma matriz multiplicada por um escalar, podemos usar a seguinte propriedade:
 
-2 - Simplifique ao máximo, se possível, o número de símbolos de pontuação das fórmulas a seguir.
- a) (P -> Q) ^ P
- b) ((P v (¬Q) -> T ) <-> (~R  (¬Q)))
- c) ((P  Q) -> ((~R) v (~Q))) 
+\[ \text{det}(kA) = k^n \cdot \text{det}(A) \]
 
-Vamos simplificar cada uma das fórmulas, reduzindo o número de símbolos de pontuação:
+onde \( k \) é o escalar e \( n \) é a ordem da matriz (neste caso, \( n = 3 \) porque estamos lidando com matrizes de ordem 3).
 
-a) \( (P \rightarrow Q) \land P \)
-   - Não é possível simplificar mais sem perder a clareza. Esta é uma fórmula bem formada da lógica proposicional.
+Agora, para a matriz \( 3AB \), onde \( A \) e \( B \) são matrizes de ordem 3:
 
-b) \( ((P \lor (\lnot Q) \rightarrow T) \leftrightarrow (\lnot R \lor (\lnot Q))) \)
-   - Podemos simplificar removendo os parênteses desnecessários:
-     \[ (P \lor \lnot Q \rightarrow T \leftrightarrow \lnot R \lor \lnot Q) \]
+\[ \text{det}(3AB) = 3^3 \cdot \text{det}(AB) \]
 
-c) \( ((P \land Q) \rightarrow (\lnot R \lor \lnot Q)) \)
-   - Podemos simplificar removendo os parênteses desnecessários:
-     \[ (P \land Q \rightarrow \lnot R \lor \lnot Q) \]
+Sabemos que \( \text{det}(AB) = \text{det}(A) \cdot \text{det}(B) \), então substituímos:
 
-Estas são as formas simplificadas das fórmulas, reduzindo os símbolos de pontuação ao máximo sem perder a clareza na expressão lógica.
+\[ \text{det}(3AB) = 3^3 \cdot (\text{det}(A) \cdot \text{det}(B)) \]
+
+Agora, substituímos os valores dados:
+
+\[ \text{det}(3AB) = 27 \cdot (6 \cdot (-2)) \]
+
+\[ \text{det}(3AB) = 27 \cdot (-12) \]
+
+\[ \text{det}(3AB) = -324 \]
+
+Portanto, o valor de \( \text{det}(3AB) \) é -324.

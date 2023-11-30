@@ -3,24 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
-            background-color: black;
-            background-image: url('imagens-cap19/wallpaper002.jpg');
-            background-repeat: no-repeat;
-            background-position: center center;
+            /*
+            background-size: aceita!
+                tamanho alto ("auto"); 
+                tamanho fixo em "px" ou "%" (pocentagem); 
+                100% da imagem ("contain"); 
+                converte o tamanho da imagem ("cover");
+            
+            Viculo(attachment): 
+                "scroll" rola o conteudo junto a outros objetos; 
+                "fixed" fixa o elemento no backround e quanto o resto fica solto;
+            
+            SHORTHAND - background:
+                color > img > position > repeat > [size] > attchment
+                Essa é a onde da shorthand do background
+                    1° height: 100vh;
+                    2° background-color: black;
+                    3° background-image: url('imagens-cap19/wallpaper002.jpg');
+                    4° background-position: center center;
+                    5° background-repeat: repeat-y;Repete no eixo y
+                    6° background-size: cover;Converte o tamanho da imagem
+                    7° background-attachment: fixed; Viculo(attachment)
+            */ 
+            /*SHORTHAND - background*/   
+            background: black url('imagens-cap19/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
-            /*aceita:
-            tamanho alto (auto), 
-            tamanho fixo em pix ou pocentagem, 
-            100% da imagem (contain), 
-            converte o tamanho da imagem (cover)*/
         }
+
+
         main{
             background-color: antiquewhite;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -35,9 +51,44 @@
         <h1>Teste de Imagem de Fundo</h1>
         <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptas, enim deserunt rem ducimus nesciunt cumque laboriosam at quam distinctio velit sunt commodi inventore fugiat, incidunt fuga sed quasi corporis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi qui rerum ipsa quas, debitis modi doloribus quasi neque dolorem illum veritatis repellat veniam alias est aperiam. Expedita alias esse mollitia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi qui rerum ipsa quas, debitis modi doloribus quasi neque dolorem illum veritatis repellat veniam alias est aperiam. Expedita alias esse mollitia. <br>
 
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequuntur vel incidunt excepturi ea distinctio sapiente? Harum, consequatur. Possimus, expedita. Cum dignissimos illum, ab obcaecati iure tempora saepe aut esse?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque itaque suscipit et dolores quae sint aspernatur in ipsam similique maxime! A dignissimos natus dolores minima atque deleniti, eligendi quas laudantium.<br>
+            
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum rerum quibusdam, natus, necessitatibus inventore perspiciatis ducimus, fugiat vitae perferendis nobis quod voluptatibus officiis at repudiandae. Non est laborum veritatis.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae est atque deserunt ullam reiciendis, quod odio dolor asperiores magnam quam autem nesciunt quia dolorem, aperiam corporis repellat obcaecati magni saepe.<br>
+            
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptas, enim deserunt rem ducimus nesciunt cumque laboriosam at quam distinctio velit sunt commodi inventore fugiat, incidunt fuga sed quasi corporis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi qui rerum ipsa quas, debitis modi doloribus quasi neque dolorem illum veritatis repellat veniam alias est aperiam. Expedita alias esse mollitia. <br>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequuntur vel incidunt excepturi ea distinctio sapiente? Harum, consequatur. Possimus, expedita. Cum dignissimos illum, ab obcaecati iure tempora saepe aut esse?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque itaque suscipit et dolores quae sint aspernatur in ipsam similique maxime! A dignissimos natus dolores minima atque deleniti, eligendi quas laudantium.<br>
+            
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum rerum quibusdam, natus, necessitatibus inventore perspiciatis ducimus, fugiat vitae perferendis nobis quod voluptatibus officiis at repudiandae. Non est laborum veritatis.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae est atque deserunt ullam reiciendis, quod odio dolor asperiores magnam quam autem nesciunt quia dolorem, aperiam corporis repellat obcaecati magni saepe.<br>
+
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptas, enim deserunt rem ducimus nesciunt cumque laboriosam at quam distinctio velit sunt commodi inventore fugiat, incidunt fuga sed quasi corporis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi qui rerum ipsa quas, debitis modi doloribus quasi neque dolorem illum veritatis repellat veniam alias est aperiam. Expedita alias esse mollitia. <br>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequuntur vel incidunt excepturi ea distinctio sapiente? Harum, consequatur. Possimus, expedita. Cum dignissimos illum, ab obcaecati iure tempora saepe aut esse?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque itaque suscipit et dolores quae sint aspernatur in ipsam similique maxime! A dignissimos natus dolores minima atque deleniti, eligendi quas laudantium.<br>
+            
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum rerum quibusdam, natus, necessitatibus inventore perspiciatis ducimus, fugiat vitae perferendis nobis quod voluptatibus officiis at repudiandae. Non est laborum veritatis.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae est atque deserunt ullam reiciendis, quod odio dolor asperiores magnam quam autem nesciunt quia dolorem, aperiam corporis repellat obcaecati magni saepe.<br>
+            
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptas, enim deserunt rem ducimus nesciunt cumque laboriosam at quam distinctio velit sunt commodi inventore fugiat, incidunt fuga sed quasi corporis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi qui rerum ipsa quas, debitis modi doloribus quasi neque dolorem illum veritatis repellat veniam alias est aperiam. Expedita alias esse mollitia. <br>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequuntur vel incidunt excepturi ea distinctio sapiente? Harum, consequatur. Possimus, expedita. Cum dignissimos illum, ab obcaecati iure tempora saepe aut esse?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque itaque suscipit et dolores quae sint aspernatur in ipsam similique maxime! A dignissimos natus dolores minima atque deleniti, eligendi quas laudantium.<br>
+            
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum rerum quibusdam, natus, necessitatibus inventore perspiciatis ducimus, fugiat vitae perferendis nobis quod voluptatibus officiis at repudiandae. Non est laborum veritatis.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae est atque deserunt ullam reiciendis, quod odio dolor asperiores magnam quam autem nesciunt quia dolorem, aperiam corporis repellat obcaecati magni saepe.<br>
         </p>
     </main>
     

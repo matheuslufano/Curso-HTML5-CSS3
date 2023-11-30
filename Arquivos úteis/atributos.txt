@@ -155,9 +155,32 @@ Atributos usados:
     Tamanho da imagem:
         -> background-size: 250px 250px;
     
-    Repetição da imagem:
+    Repetição da imagem: repeat, no-repeat, repeat-x e repeat-y
         -> background-repeat: repeat;
         -> nesse atributo pode se usar: 
             no-repeat (não repete),
             repeat-x (repete linha x), 
             repeat-y (repete coluna y)
+            
+    Tamanho do fundo: auto, px, contain, cover
+        -> background-size: aceita!
+            tamanho alto ("auto"); 
+            tamanho fixo em "px" ou "%" (pocentagem); 
+            100% da imagem ("contain"); 
+            converte o tamanho da imagem ("cover");
+            
+    Viculo(attachment): scroll, fixed
+        -> background-attachment
+            "scroll" rola o conteudo junto a outros objetos; 
+            "fixed" fixa o elemento no backround e quanto o resto fica solto;
+        
+    SHORTHAND - background: color > img > position > repeat > [size] > attchment
+        Essa é a onde da shorthand do background
+            1° height: 100vh;
+            2° background-color: black;
+            3° background-image: url('imagens-cap19/wallpaper002.jpg');
+            4° background-position: center center;
+            5° background-repeat: repeat-y;Repete no eixo y
+            6° background-size: cover;Converte o tamanho da imagem
+            7° background-attachment: fixed; Viculo(attachment)
+            
