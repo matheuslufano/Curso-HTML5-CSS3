@@ -59,11 +59,14 @@ header a:hover, footer a:hover {
 /*Estilo do section*/
 section {
     font-family: var(--fonte3);
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+}
+section > p {
+    padding-bottom: 2em;
 }
 section.normal {
     background-color: white;
@@ -71,12 +74,24 @@ section.normal {
 }
 section.imagem {
     background-color: #515151;
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 section.imagem > p {
     padding: 20px;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.514);
+    
+    text-shadow: 1px 1px 0px black;
+}
+section#img01 {
+background-image: url('imagens/background001.jpg');
+background-position: right center;
+}
+section#img02 {
+background-image: url('imagens/background002.jpg');
 }
 /*Estilo do footer*/
 footer {
