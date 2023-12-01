@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/*
+Anotação de atributos 
+
+text-transform: uppercase; <-(atributo para por em maisculo o texto)
+
+*/
+
+/*Estilos regal*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+/*Estilo do header*/
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p {
+    padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/*Estilo do section*/
+section {
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: #515151;
+    color: white;
+}
+section.imagem > p {
+    padding: 30px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+/*Estilo do footer*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
