@@ -1,15 +1,31 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+}
 /*
 Anotação de atributos 
 
 text-transform: uppercase; <-(atributo para por em maisculo o texto)
+display: inline-block;
+font-size: 10vw;
 
+
+
+fontes:
+font-family: 'Passion One', sans-serif;
+font-family: 'Sriracha', cursive;
 */
 
 /*Estilos regal*/
 * {
     margin: 0%;
     padding: 0%;
+    font-size: 1em;
 }
 /*Estilo do header*/
 html, body {
@@ -17,13 +33,16 @@ html, body {
     background-color: darkgray;
 }
 header {
+    font-family: var(--fonte1);
     background-color: black;
     color: white;
     text-align: center;
 }
 header > h1 {
-    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-size: 10vw;
     font-variant: small-caps;
+    padding-top: 50px;
 }
 header > p {
     padding-bottom: 50px;
@@ -39,6 +58,8 @@ header a:hover, footer a:hover {
 
 /*Estilo do section*/
 section {
+    font-family: var(--fonte3);
+    font-size: 4vw;
     padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -53,8 +74,8 @@ section.imagem {
     color: white;
 }
 section.imagem > p {
-    padding: 30px;
-    width: 400px;
+    padding: 20px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.253);
 }
 /*Estilo do footer*/
